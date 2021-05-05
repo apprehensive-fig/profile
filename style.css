@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap');
+
+header, body {
+  background-color: #f7f3ea
+}
+
+img: img {
+  align-content: center;
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-grey {
+  z-index: 90;
+  background-image: url("images/cat.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  color: #f7f3ea;
+  opacity: 1.0;
+  font-size: 10px;
+  text-align: top;
+  transition: opacity 0.3s;
+  padding: 40px 50px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 16px;
+}
+
+.btn-grey:hover {
+  opacity: 0.5;
+}
+
+.container {
+  color: #382f2f;
+  font-family: 'Bitter', serif;
+  font-size: 18x;
+  text-align: center;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+#text{
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    margin-left: -43px;
+    margin-top: 40px;
+    color: #f7f3ea;
+}
+
+#heart {
+  position:relative;
+  width:233px;
+  height:100px;
+}
+
+#heart:before,#heart:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0;
+  width: 100px;
+  height: 160px;
+  background: #bf8fa4;
+  border-radius: 50px 50px 0 0;
+  transform:rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 50;
+  transform:rotate(45deg);
+  transform-origin: 50% 25%;
+}
+
+
+#small_heart {
+  position:relative;
+  width:200px;
+  height:100px;
+}
+
+#small_heart:before,#small_heart:after {
+  position: absolute;
+  content: "";
+  left: 350px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background:#890517;
+  border-radius:50px 50px 0 0;
+  transform:rotate(-45deg);
+  transform-origin:0 100%;
+}
+
+#small_heart:after {
+  left:200;
+  transform:rotate(45deg);
+  transform-origin:50% 25%;
+}
+
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline a {
+  font-size: 30px;
+  color: #9bb0b2;
+  margin: 4px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
